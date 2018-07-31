@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calendar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Calendar Planner</h1>
+                <p class="lead">A Weekly Planner for Building Websites and Apps</p>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2>Select Day:</h2>
+            <div class="col">
+                <div class="col-sm">
+                    <div class="input-group" aria-labelledby="dropdownMenuButton">
+                        <select id="day" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                            <option selected value="Sunday">
+                                <h4>SUNDAY</h4>
+                            </option>
+                            <option value="Monday">
+                                <h4>MONDAY</h4>
+                            </option>
+                            <option value="Tuesday">
+                                <h4>TUESDAY</h4>
+                            </option>
+                            <option value="Wednesday">
+                                <h4>WEDNESDAY</h4>
+                            </option>
+                            <option value="Thursday">
+                                <h4>THURSDAY</h4>
+                            </option>
+                            <option value="Friday">
+                                <h4>FRIDAY</h4>
+                            </option>
+                            <option value="Saturday">
+                                <h4>SATURDAY</h4>
+                            </option>
+                        </select>
+                        
+                    </div>
+
+                </div>
+            </div>
+            <h2>Select Time:</h2>
+            
+                <div class="input-group" aria-labelledby="dropdownMenuButton">
+                    <select id="time" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected value="05:00 am">
+                            <h4>05:00 am</h4>
+                        </option>
+                        <option value="06:00 am">
+                            <h4>06:00 am</h4>
+                        </option>
+                        <option value="7:00 am">
+                            <h4>07:00 am</h4>
+                        </option>
+                        <option value="08:00 am">
+                            <h4>08:00 am</h4>
+                        </option>
+                        <option value="09:00 am">
+                            <h4>09:00 am</h4>
+                        </option>
+                        <option value="10:00 am">
+                            <h4>10:00 am</h4>
+                        </option>
+                        <option value="11:00 am">
+                            <h4>11:00 am</h4>
+                        </option>
+                        <option value="12:00 pm">
+                            <h4>12:00 pm</h4>
+                        </option>
+                        <option value="01:00 pm">
+                            <h4>1:00 pm</h4>
+                        </option>
+                        <option value="02:00 pm">
+                            <h4>2:00 pm</h4>
+                        </option>
+                        <option value="03:00 pm">
+                            <h4>3:00 pm</h4>
+                        </option>
+                        <option value="04:00 pm">
+                            <h4>4:00 pm</h4>
+                        </option>
+                        <option value="05:00 pm">
+                            <h4>5:00 pm</h4>
+                        </option>
+                        <option value="06:00 pm">
+                            <h4>6:00 pm</h4>
+                        </option>
+                        <option value="07:00 pm">
+                            <h4>7:00 pm</h4>
+                        </option>
+                        <option value="08:00 pm">
+                            <h4>8:00 pm</h4>
+                        </option>
+                        <option value="09:00 pm">
+                            <h4>9:00 pm</h4>
+                        </option>
+                        <option value="10:00 pm">
+                            <h4>10:00 pm</h4>
+                        </option>
+                        <option value="11:00 pm">
+                            <h4>11:00 pm</h4>
+                        </option>
+                        <option value="12:00 am">
+                            <h4>12:00 am</h4>
+                        </option>
+
+                    </select>
+                    
+                </div>
+                <h2>Add Task Here:</h2>
+                <input id="task" type="string">
+                <button id="saveButton" class="btn btn-warning save">Save</button>
+                <!-- <button class="btn btn-success edit">Edit</button>
+                <button class="btn btn-danger delete">Delete</button> -->
+
+        </div>
+
+        <footer>
+            <center><h2>Have a Good Day!</h2></center>
+            <hr>
+            <div id="inputData"></div>
+        </footer>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <script src="script.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+            
+</body>
+
+</html>
