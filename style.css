@@ -8,6 +8,9 @@ body {
     /* width: 30%; */
     padding: 10px;
 }
+#inputData{
+    text-align: center;
+}
 
 .container {
     width: 100%;
