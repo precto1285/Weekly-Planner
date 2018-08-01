@@ -5,10 +5,9 @@ body {
 }
 
 .input-group {
-    /* width: 30%; */
     padding: 10px;
 }
-#inputData{
+li{
     text-align: center;
 }
 
@@ -35,7 +34,6 @@ body {
 
 .jumbotron {
     background-image: url("calendar.jpg");
-
 }
 
 footer {
@@ -43,6 +41,5 @@ footer {
     font-stretch: extra-expanded;
     height: auto;
     padding: auto;
-    margin-top:20px;;
-    margin-bottom:0px;
+    margin-top:20px;
 }

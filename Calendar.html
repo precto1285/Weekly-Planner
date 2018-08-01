@@ -51,91 +51,95 @@
                                 <h4>SATURDAY</h4>
                             </option>
                         </select>
-                        
+
                     </div>
 
                 </div>
             </div>
             <h2>Select Time:</h2>
-            
-                <div class="input-group" aria-labelledby="dropdownMenuButton">
-                    <select id="time" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-                        <option selected value="05:00 am">
-                            <h4>05:00 am</h4>
-                        </option>
-                        <option value="06:00 am">
-                            <h4>06:00 am</h4>
-                        </option>
-                        <option value="7:00 am">
-                            <h4>07:00 am</h4>
-                        </option>
-                        <option value="08:00 am">
-                            <h4>08:00 am</h4>
-                        </option>
-                        <option value="09:00 am">
-                            <h4>09:00 am</h4>
-                        </option>
-                        <option value="10:00 am">
-                            <h4>10:00 am</h4>
-                        </option>
-                        <option value="11:00 am">
-                            <h4>11:00 am</h4>
-                        </option>
-                        <option value="12:00 pm">
-                            <h4>12:00 pm</h4>
-                        </option>
-                        <option value="01:00 pm">
-                            <h4>1:00 pm</h4>
-                        </option>
-                        <option value="02:00 pm">
-                            <h4>2:00 pm</h4>
-                        </option>
-                        <option value="03:00 pm">
-                            <h4>3:00 pm</h4>
-                        </option>
-                        <option value="04:00 pm">
-                            <h4>4:00 pm</h4>
-                        </option>
-                        <option value="05:00 pm">
-                            <h4>5:00 pm</h4>
-                        </option>
-                        <option value="06:00 pm">
-                            <h4>6:00 pm</h4>
-                        </option>
-                        <option value="07:00 pm">
-                            <h4>7:00 pm</h4>
-                        </option>
-                        <option value="08:00 pm">
-                            <h4>8:00 pm</h4>
-                        </option>
-                        <option value="09:00 pm">
-                            <h4>9:00 pm</h4>
-                        </option>
-                        <option value="10:00 pm">
-                            <h4>10:00 pm</h4>
-                        </option>
-                        <option value="11:00 pm">
-                            <h4>11:00 pm</h4>
-                        </option>
-                        <option value="12:00 am">
-                            <h4>12:00 am</h4>
-                        </option>
 
-                    </select>
-                    
-                </div>
-                <h2>Add Task Here:</h2>
-                <input id="task" type="string">
-                <button id="saveButton" class="btn btn-warning save">Save</button>
-                <!-- <button class="btn btn-success edit">Edit</button>
+            <div class="input-group" aria-labelledby="dropdownMenuButton">
+                <select id="time" class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option selected value="05:00 am">
+                        <h4>05:00 am</h4>
+                    </option>
+                    <option value="06:00 am">
+                        <h4>06:00 am</h4>
+                    </option>
+                    <option value="7:00 am">
+                        <h4>07:00 am</h4>
+                    </option>
+                    <option value="08:00 am">
+                        <h4>08:00 am</h4>
+                    </option>
+                    <option value="09:00 am">
+                        <h4>09:00 am</h4>
+                    </option>
+                    <option value="10:00 am">
+                        <h4>10:00 am</h4>
+                    </option>
+                    <option value="11:00 am">
+                        <h4>11:00 am</h4>
+                    </option>
+                    <option value="12:00 pm">
+                        <h4>12:00 pm</h4>
+                    </option>
+                    <option value="01:00 pm">
+                        <h4>1:00 pm</h4>
+                    </option>
+                    <option value="02:00 pm">
+                        <h4>2:00 pm</h4>
+                    </option>
+                    <option value="03:00 pm">
+                        <h4>3:00 pm</h4>
+                    </option>
+                    <option value="04:00 pm">
+                        <h4>4:00 pm</h4>
+                    </option>
+                    <option value="05:00 pm">
+                        <h4>5:00 pm</h4>
+                    </option>
+                    <option value="06:00 pm">
+                        <h4>6:00 pm</h4>
+                    </option>
+                    <option value="07:00 pm">
+                        <h4>7:00 pm</h4>
+                    </option>
+                    <option value="08:00 pm">
+                        <h4>8:00 pm</h4>
+                    </option>
+                    <option value="09:00 pm">
+                        <h4>9:00 pm</h4>
+                    </option>
+                    <option value="10:00 pm">
+                        <h4>10:00 pm</h4>
+                    </option>
+                    <option value="11:00 pm">
+                        <h4>11:00 pm</h4>
+                    </option>
+                    <option value="12:00 am">
+                        <h4>12:00 am</h4>
+                    </option>
+
+                </select>
+
+            </div>
+            <h2>Add Task Here:</h2>
+            <input id="task" type="string">
+            <button id="saveButton" class="btn btn-warning save">Save</button>
+            <!-- <button class="btn btn-success edit">Edit</button>
                 <button class="btn btn-danger delete">Delete</button> -->
 
         </div>
 
         <footer>
-            <center><h2>Have a Good Day!</h2></center>
+            <center>
+                <h2>Have a Good Day!</h2>
+            </center>
             <hr>
-            <div id="inputData"></div>
+            <ol>
+                <div id="inputData"></div>
+            </ol>
         </footer>
 
 
@@ -149,7 +153,7 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
             crossorigin="anonymous"></script>
-            
+
 </body>
 
 </html>

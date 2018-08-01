@@ -2,17 +2,27 @@ var day = '';
 var time = '';
 var task = '';
 
-
-$("#saveButton").on("click", function () {
+$(document).text(function () {
     //Save day, time & task to footer.
-    $(document).text(function () {
+
+    
+    $("#saveButton").on("click", function () {
+        if(task === ''){
+            alert("Please enter a task");
+        }
+        else{
         day = $("#day").val();
         time = $("#time").val();
         task = $("#task").val();
-        $("#inputData").append(day + " | " + time + " | " + task + " | " + "<button class='btn btn-success edit'>Edit</button>" + " | " + "<button class='btn btn-danger delete'>Delete</button><br>");
-
+        $("#inputData").append("<li>" + day +
+            " | " + time + " | " + task +
+            " | " +
+            "<button class='btn btn-danger delete'>Delete</button><br>"
+            + "</li>");
+        }
     });
 });
+
 
     //options for day & time along with task string cannot be null
 
@@ -21,8 +31,4 @@ $("#saveButton").on("click", function () {
         // Let each 
 
 
-//Edit specified day, time & task in footer.
 
-    //When button to edit is selected
-
-//Delete specified day, time & task in footer.
