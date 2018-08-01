@@ -7,19 +7,15 @@ $(document).text(function () {
 
     
     $("#saveButton").on("click", function () {
-        if(task === ''){
-            alert("Please enter a task");
-        }
-        else{
+        
         day = $("#day").val();
         time = $("#time").val();
         task = $("#task").val();
         $("#inputData").append("<li>" + day +
             " | " + time + " | " + task +
-            " | " +
+            " | " + "<buton class='btn btn-success edit>Edit</button>" + 
             "<button class='btn btn-danger delete'>Delete</button><br>"
             + "</li>");
-        }
     });
 });
 
