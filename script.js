@@ -2,10 +2,9 @@ var day = '';
 var time = '';
 var task = '';
 
-
-$("#saveButton").on("click", function () {
-    //Save day, time & task to footer.
-    $(document).text(function () {
+$(document).text(function () {
+    $("#saveButton").on("click", function () {
+        //Save day, time & task to footer.
         day = $("#day").val();
         time = $("#time").val();
         task = $("#task").val();
@@ -15,7 +14,6 @@ $("#saveButton").on("click", function () {
             + " | " + "<button class='btn btn-danger delete'>Delete</button><br>" + "</li>");
     });
 });
-
 
     //options for day & time along with task string cannot be null
 
