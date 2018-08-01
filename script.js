@@ -2,20 +2,17 @@ var day = '';
 var time = '';
 var task = '';
 
-$(document).text(function () {
-    //Save day, time & task to footer.
 
-    
-    $("#saveButton").on("click", function () {
-        
+$("#saveButton").on("click", function () {
+    //Save day, time & task to footer.
+    $(document).text(function () {
         day = $("#day").val();
         time = $("#time").val();
         task = $("#task").val();
         $("#inputData").append("<li>" + day +
             " | " + time + " | " + task +
-            " | " + "<buton class='btn btn-success edit>Edit</button>" + 
-            "<button class='btn btn-danger delete'>Delete</button><br>"
-            + "</li>");
+            " | " + "<button class='btn btn-success edit'>Edit</button>"
+            + " | " + "<button class='btn btn-danger delete'>Delete</button><br>" + "</li>");
     });
 });
 
@@ -27,4 +24,8 @@ $(document).text(function () {
         // Let each 
 
 
+//Edit specified day, time & task in footer.
 
+    //When button to edit is selected
+
+//Delete specified day, time & task in footer.
